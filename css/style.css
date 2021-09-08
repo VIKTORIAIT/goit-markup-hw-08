@@ -1,11 +1,13 @@
 /* цвет основного текста #757575  */
 /* цвет заголовков #212121*/
 /* цвет акцента синий #2196F3*/
+/* Портфолио: цвет заголовка h3 rgba(33, 33, 33, 1)*/
 
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --portfolio-title-text-color: rgba(33, 33, 33, 1);
 }
 body {
   color: var(--primary-text-color);
@@ -31,7 +33,7 @@ button {
 .logo .accent {
   color: #000;
 }
-.site-nav button,
+.site-nav a,
 .auth-nav a {
   color: var(--title-text-color);
   text-decoration: none;
@@ -44,8 +46,8 @@ button {
 .auth-nav a {
   color: var(--primary-text-color);
 }
-.site-nav button:hover,
-.site-nav button:focus,
+.site-nav a:hover,
+.site-nav a:focus,
 .auth-nav a:hover,
 .auth-nav a:focus {
   color: var(--accent-color);
@@ -141,4 +143,45 @@ button {
 .footer-raws a:hover,
 .footer-raws a:focus {
   color: var(--accent-color);
+}
+
+/* PORTFLIO PAGE */
+/* Work filter */
+.porffolio-filter button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  border: transparent;
+}
+
+/* Work-cards */
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+.portfolio-work-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: vsr(--primary-text-color);
+}
+.portfolio-work-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  background-color: var(--accent-color);
 }
