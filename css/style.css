@@ -163,7 +163,8 @@ button {
 }
 .porffolio-filter button:hover,
 .porffolio-filter button:focus {
-  color: var(--accent-color);
+  color: #ffffff;
+  background-color: var(--accent-color);
 }
 
 /* Work-cards */
