@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,97 +19,119 @@
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body class="page">
-        <header>
-            <div class="container">
+        <header class="header-page">
+            <div class="container header-container">
                 <nav class="container-nav">
                     <a class="logo" href="index.html">Web<span class="accent">Studio</span></a>
                     <ul class="site-nav">
-                        <div class="nav">
-                            <li><a href="./index.html">Студия</a></li>
-                            <li><a class="active" href="./portfolio.html">Портфолио</a></li>
-                            <li><a href="">Контакты</a></li>
-                        </div>
+                        <li class="site-nav-item"><a class="site-nav-link" href="./index.html">Студия</a></li>
+                        <li class="site-nav-item">
+                            <a class="site-nav-link active" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="site-nav-item"><a class="site-nav-link" href="">Контакты</a></li>
                     </ul>
                 </nav>
                 <ul class="auth-nav">
-                    <li><a href="">info@devstudio.com</a></li>
-                    <li><a href="">+38 096 111 11 11</a></li>
+                    <li class="auth-nav-item"><a class="auth-nav-link" href="">info@devstudio.com</a></li>
+                    <li class="auth-nav-item"><a class="auth-nav-link" href="">+38 096 111 11 11</a></li>
                 </ul>
             </div>
         </header>
 
         <main>
             <!-- Work examples -->
-            <section class="container">
-                <!-- Work filter -->
-                <nav>
+            <section class="section">
+                <div class="container">
+                    <!-- Work filter -->
                     <ul class="porffolio-filter">
-                        <li><button class="active-filter" type="button">Все</button></li>
-                        <li><button type="button">Веб-сайты</button></li>
-                        <li><button type="button">Приложения</button></li>
-                        <li><button type="button">Дизайн</button></li>
-                        <li><button type="button">Маркетинг</button></li>
+                        <li><button class="prt-btn active-filter" type="button">Все</button></li>
+                        <li><button class="prt-btn" type="button">Веб-сайты</button></li>
+                        <li><button class="prt-btn" type="button">Приложения</button></li>
+                        <li><button class="prt-btn" type="button">Дизайн</button></li>
+                        <li><button class="prt-btn" type="button">Маркетинг</button></li>
                     </ul>
-                </nav>
-                <!--Work-cards-->
-                <ul class="work-card">
-                    <li>
-                        <img src="./images/img1.jpg" width="370" alt="Ноутбук открыт на веб-странице" />
-                        <div class="port-card">
-                            <h3 class="portfolio-title">Технокряк</h3>
-                            <p class="portfolio-work-title">Веб-сайт</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/img2.jpg" width="370" alt="Игра в бскетбол" />
-                        <div class="port-card">
-                            <h3 class="portfolio-title">Постер New Orlean vs Golden Star</h3>
-                            <p class="portfolio-work-title">Дизайн</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/img3.jpg" width="370" alt="Логотип рыбного ресторана" />
-                        <div class="port-card">
-                            <h3 class="portfolio-title">Ресторан Seafood</h3>
-                            <p class="portfolio-work-title">Приложение</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/img4.jpg" width="370" alt="Наушники" />
-                        <div class="port-card">
-                            <h3 class="portfolio-title">Проект Prime</h3>
-                            <p class="portfolio-work-title">Маркетинг</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/img5.jpg" width="370" alt="Две коробки" />
-                        <div class="port-card">
-                            <h3 class="portfolio-title">Проект Boxes</h3>
-                            <p class="portfolio-work-title">Приложение</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/img6.jpg" width="370" alt="ПК" />
-                        <div class="port-card">
-                            <h3 class="portfolio-title">Inspiration has no Borders</h3>
-                            <p class="portfolio-work-title">Веб-сайт</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/img7.jpg" width="370" alt="Логотип" />
-                        <div class="port-card">
-                            <h3 class="portfolio-title">Проект LAB</h3>
-                            <p class="portfolio-work-title">Маркетинг</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/img8.jpg" width="370" alt="Мужчина работает за ноутбуком" />
-                        <div class="port-card">
-                            <h3 class="portfolio-title">Growing Business</h3>
-                            <p class="portfolio-work-title">Приложение</p>
-                        </div>
-                    </li>
-                </ul>
+                    <!--Work-cards-->
+                    <ul class="work-card">
+                        <li class="work-card-item">
+                            <img
+                                class="work-card-img"
+                                src="./images/img1.jpg"
+                                width="370"
+                                alt="Ноутбук открыт на веб-странице"
+                            />
+                            <div class="port-card">
+                                <h3 class="portfolio-title">Технокряк</h3>
+                                <p class="portfolio-work-title">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li class="work-card-item">
+                            <img class="work-card-img" src="./images/img2.jpg" width="370" alt="Игра в бскетбол" />
+                            <div class="port-card">
+                                <h3 class="portfolio-title">Постер New Orlean vs Golden Star</h3>
+                                <p class="portfolio-work-title">Дизайн</p>
+                            </div>
+                        </li>
+                        <li class="work-card-item">
+                            <img
+                                class="work-card-img"
+                                src="./images/img3.jpg"
+                                width="370"
+                                alt="Логотип рыбного ресторана"
+                            />
+                            <div class="port-card">
+                                <h3 class="portfolio-title">Ресторан Seafood</h3>
+                                <p class="portfolio-work-title">Приложение</p>
+                            </div>
+                        </li>
+                        <li class="work-card-item">
+                            <img class="work-card-img" src="./images/img4.jpg" width="370" alt="Наушники" />
+                            <div class="port-card">
+                                <h3 class="portfolio-title">Проект Prime</h3>
+                                <p class="portfolio-work-title">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li class="work-card-item">
+                            <img class="work-card-img" src="./images/img5.jpg" width="370" alt="Две коробки" />
+                            <div class="port-card">
+                                <h3 class="portfolio-title">Проект Boxes</h3>
+                                <p class="portfolio-work-title">Приложение</p>
+                            </div>
+                        </li>
+                        <li class="work-card-item">
+                            <img class="work-card-img" src="./images/img6.jpg" width="370" alt="ПК" />
+                            <div class="port-card">
+                                <h3 class="portfolio-title">Inspiration has no Borders</h3>
+                                <p class="portfolio-work-title">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li class="work-card-item">
+                            <img class="work-card-img" src="./images/img7.jpg" width="370" alt="Книга" />
+                            <div class="port-card">
+                                <h3 class="portfolio-title">Издание Limited Edition</h3>
+                                <p class="portfolio-work-title">Дизайн</p>
+                            </div>
+                        </li>
+                        <li class="work-card-item">
+                            <img class="work-card-img" src="./images/img8.jpg" width="370" alt="Логотип" />
+                            <div class="port-card">
+                                <h3 class="portfolio-title">Проект LAB</h3>
+                                <p class="portfolio-work-title">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li class="work-card-item">
+                            <img
+                                class="work-card-img"
+                                src="./images/img9.jpg"
+                                width="370"
+                                alt="Мужчина работает за ноутбуком"
+                            />
+                            <div class="port-card">
+                                <h3 class="portfolio-title">Growing Business</h3>
+                                <p class="portfolio-work-title">Приложение</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>
         <!-- footer -->
@@ -119,13 +141,13 @@
                     <a class="logo" href="./index.html">Web<span class="accent-secondary">Studio</span></a>
                     <ul class="footer-raws">
                         <li class="footer-list">
-                            <address>г. Киев, пр-т Леси Украинки, 26</address>
+                            <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
                         </li>
                         <li class="footer-list">
-                            <a href="mailto:info@example.com">info@example.com</a>
+                            <a class="footer-link" href="mailto:info@example.com">info@example.com</a>
                         </li>
                         <li class="footer-list">
-                            <a href="tel:+380991111111">+38 099 111 11 11</a>
+                            <a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
                         </li>
                     </ul>
                 </div>
