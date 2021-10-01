@@ -159,9 +159,8 @@ button {
 
 /* Hero */
 .hero {
-    background: linear-gradient(to right rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-    background-image: url('../images/background.jpg');
-    background-color: rgba(47, 48, 58, 1);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/background.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1600px 600px;
@@ -226,9 +225,6 @@ button {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
-}
-.feature-icon {
-    fill: var(--title-text-color);
 }
 .feature-list .title {
     color: var(--title-text-color);
@@ -311,6 +307,9 @@ button {
     justify-content: center;
     align-items: center;
 }
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
 .social-link {
     display: flex;
     justify-content: center;
@@ -341,11 +340,22 @@ button {
     justify-content: space-between;
 }
 .client-item {
+}
+.client-link {
+    display: block;
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     padding: 16px 32px;
+}
+.client-link:hover .client-logo,
+.client-link:focus .client-logo {
+    fill: var(--accent-color);
+}
+.client-link:hover,
+.client-link:focus {
+    border-color: var(--accent-color);
 }
 .client-logo {
     fill: rgba(175, 177, 184, 1);
@@ -440,8 +450,7 @@ button {
 .footer-social-item:not(:last-child) {
     margin-right: 10px;
 }
-.footer-social-link:hover .social-logo,
-.footer-social-link:focus .social-logo {
+.footer-social-logo {
     fill: var(--white-color);
 }
 .footer-social-link:hover,
