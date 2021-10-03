@@ -54,7 +54,16 @@
             <section class="hero">
                 <div class="container">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button class="btn" type="button">Заказать услугу</button>
+                    <button data-modal-open class="btn" type="button">Заказать услугу</button>
+                    <div data-modal class="backdrop is-hidden">
+                        <div class="modal">
+                            <button data-modal-close class="btn-close" type="button">
+                                <svg class="btn-close-icon" width="18px" height="18px">
+                                    <use href="./images/btn-close.svg#icon-btn-close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- section2 Features -->
@@ -114,31 +123,49 @@
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="work-fotos">
                         <li>
-                            <a href=""
-                                ><img
-                                    class="card-image"
-                                    src="./images/box1.jpg"
-                                    width="370"
-                                    alt="разработка графического шаблона"
-                            /></a>
+                            <a href="">
+                                <div class="work-img-cont">
+                                    <img
+                                        class="card-image"
+                                        src="./images/box1.jpg"
+                                        width="370"
+                                        alt="разработка графического шаблона"
+                                    />
+                                    <div class="card-image-cont">
+                                        <h3 class="card-image-tittle">Десктопные приложения</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="work-img-cont">
+                                    <img
+                                        class="card-image"
+                                        src="./images/box2.jpg"
+                                        width="370"
+                                        alt="хорошая комуникация с клиентом"
+                                    />
+                                    <div class="card-image-cont">
+                                        <h3 class="card-image-tittle">Мобильные приложения</h3>
+                                    </div>
+                                </div>
+                            </a>
                         </li>
                         <li>
                             <a href=""
-                                ><img
-                                    class="card-image"
-                                    src="./images/box2.jpg"
-                                    width="370"
-                                    alt="хорошая комуникация с клиентом"
-                            /></a>
-                        </li>
-                        <li>
-                            <a href=""
-                                ><img
-                                    class="card-image"
-                                    src="./images/box3.jpg"
-                                    width="370"
-                                    alt="подбор стильных цветовых сочетаний"
-                            /></a>
+                                ><div class="work-img-cont">
+                                    <img
+                                        class="card-image"
+                                        src="./images/box3.jpg"
+                                        width="370"
+                                        alt="подбор стильных цветовых сочетаний"
+                                    />
+                                    <div class="card-image-cont">
+                                        <h3 class="card-image-tittle">Дизайнерские решения</h3>
+                                    </div>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -402,5 +429,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
