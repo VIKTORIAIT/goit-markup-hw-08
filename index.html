@@ -62,6 +62,60 @@
                                     <use href="./images/btn-close.svg#icon-btn-close"></use>
                                 </svg>
                             </button>
+                            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                            <form class="form">
+                                <div class="form-person">
+                                    <label for="person" class="form-label">Имя</label>
+                                    <input type="text" class="form-input" name="person" id="person" placeholder="  " />
+                                    <span class="icn icone-person">
+                                        <svg width="18px" height="18px">
+                                            <use href="./images/sprite.omg.svg#icon-modal-person"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="form-phone">
+                                    <label for="phone" class="form-label">Телефон</label>
+                                    <input type="tel" class="form-input" name="phone" id="phone" placeholder="  " />
+                                    <span class="icn icone-phone">
+                                        <svg width="18px" height="18px">
+                                            <use href="./images/sprite.omg.svg#icon-modal-phone"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="form-mail">
+                                    <label for="email" class="form-label">Почта</label>
+                                    <input type="email" class="form-input" name="email" id="email" placeholder="  " />
+                                    <span class="icn icone-mail">
+                                        <svg width="18px" height="18px">
+                                            <use href="./images/sprite.omg.svg#icon-modal-email"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="form-coment">
+                                    <label for="coment" class="form-label">Комментарий</label>
+                                    <textarea
+                                        class="form-input coment"
+                                        name="coment"
+                                        id="coment"
+                                        placeholder="Введите текст"
+                                    ></textarea>
+                                </div>
+                                <div class="form-checkbox">
+                                    <label class="checkbox-label">
+                                        <input class="checkbox-input" type="checkbox" name="agree" />
+                                        Соглашаюсь с рассылкой и принимаю
+                                        <a class="form-a" href="">Условия договора</a>
+                                        <span class="bg-icn">
+                                            <svg class="icn-yes" width="16px" height="15px">
+                                                <use href="./images/sprite.omg.svg#icon-check"></use>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="btn-form-close">
+                                    <button class="form-close" type="submit">Отправить</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -394,7 +448,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-card-right">
+                <div class="footer-card-center">
                     <h3 class="footer-title2">присоединяйтесь</h3>
                     <ul class="social-list">
                         <li class="social-item footer-social-item">
@@ -426,6 +480,22 @@
                             </a>
                         </li>
                     </ul>
+                </div>
+                <div class="footer-card-right">
+                    <div class="footer-card-right1">
+                        <h3 class="footer-title2 footer-title2a">Подпишитесь на рассылку</h3>
+                        <form name="submit">
+                            <label class="submit-label">
+                                <input class="submit-input" type="email" name="submit-email" placeholder="E-mail" />
+                            </label>
+                        </form>
+                    </div>
+                    <div class="footer-card-right2">
+                        <button class="btn-submit" type="button">Подписаться</button>
+                        <svg class="icon-send" width="24px" height="24px">
+                            <use href="./images/sprite.omg.svg#icon-send"></use>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </footer>
