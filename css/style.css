@@ -85,8 +85,7 @@ button {
     height: 4px;
     border-radius: 2px;
     background: var(--accent-color);
-    top: 47px;
-    opacity: 1;
+    top: 45px;
 }
 
 .site-nav-item:not(:last-child) {
@@ -421,11 +420,10 @@ button {
     display: block;
     fill: var(--white-color);
 }
-.btn-form-close {
-    display: flex;
-    justify-content: center;
-}
+
 .form-close {
+    display: block;
+    margin: 0 auto;
     font-family: inherit;
     background-color: var(--accent-color);
     color: var(--white-color);
@@ -692,7 +690,7 @@ button {
 .footer-link:focus {
     color: var(--accent-color);
 }
-.footer-title2 {
+.footer-title-ctr {
     text-transform: uppercase;
     margin-bottom: 20px;
     color: var(--white-color);
@@ -738,22 +736,21 @@ button {
 }
 .footer-card-right {
     display: flex;
-    justify-content: baseline;
+    flex-direction: column;
     margin-left: 93px;
 }
-.footer-title2a {
+.footer-title-right {
     margin-bottom: 20px;
 }
 .footer-card-right1 {
+    display: flex;
+    align-items: center;
     min-width: 358px;
-}
-.footer-card-right2 {
-    position: relative;
-    margin-left: 12px;
 }
 .submit-input {
     display: flex;
     align-items: center;
+    width: 358px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding: 15px 16px;
@@ -778,32 +775,31 @@ button {
 .btn-submit {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-left: 12px;
     min-width: 200px;
     min-height: 50px;
     background-color: var(--accent-color);
     color: var(--white-color);
     font-family: inherit;
     border-radius: 4px;
-    padding-left: 29px;
-    margin-top: 36px;
-    transition: background-color --transition-duration --transition-timing-function,
-        color --transition-duration --transition-timing-function;
+    padding: 10px 28px;
+    transition: var(background-color) var(--transition-duration) var(--transition-timing-function),
+        var(color --transition-duration) var(--transition-timing-function);
 }
 .btn-submit:hover,
 .btn-submit:focus {
     background-color: var(--white-color);
     color: var(--accent-color);
 }
-.btn-submit:hover ~ .icon-send,
-.btn-submit:focus ~ .icon-send {
+.btn-submit:hover > .icon-send,
+.btn-submit:focus > .icon-send {
     fill: var(--accent-color);
 }
 .icon-send {
-    position: absolute;
+    display: block;
+    margin-left: 10px;
     fill: var(--white-color);
-    top: 36px;
-    right: 28px;
-    transform: translateY(50%);
 }
 /* PORTFOLIO PAGE */
 /* Work filter */
