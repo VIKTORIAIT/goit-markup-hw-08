@@ -6,18 +6,12 @@
 @import "./base/reset";
 
 @import "./components/logo";
-@import "./components/backdrop";
 @import "./components/btn";
-@import "./components/modal";
 @import "./components/section_title";
 @import "./components/section";
 @import "./components/social";
 
 @import "./layout/header";
-@import "./layout/hero";
-@import "./layout/modal_in";
-@import "./layout/features";
-@import "./layout/work_examples";
-@import "./layout/team";
-@import "./layout/customers";
+@import "./layout/portfolio_workcard";
+@import "./layout/portfolio_workfilter";
 @import "./layout/footer";

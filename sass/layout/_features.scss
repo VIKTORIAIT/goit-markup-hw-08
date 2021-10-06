@@ -1,0 +1,35 @@
+/* Features */
+.feature {
+  padding-top: 95px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__iconbox {
+    display: inline-block;
+    background: #f5f4fa;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    width: 270px;
+  }
+}

@@ -1,0 +1,114 @@
+/* site-nav */
+.header {
+  border-bottom: 1px solid #ececec;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.nav {
+  display: flex;
+  &__site {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+  }
+  &__auth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+  }
+}
+
+.active {
+  position: relative;
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--accent-color);
+    top: 45px;
+  }
+}
+
+.site-list,
+.auth-list {
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+.site-list {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+  & .active {
+    color: $accent-color;
+  }
+  &__link {
+    color: $title-text-color;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+}
+.auth-list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  &:not(:first-child) {
+    margin-left: 50px;
+  }
+  &__link {
+    color: $primary-text-color;
+    display: flex;
+    align-items: center;
+  }
+  &__link:focus,
+  &__link:hover {
+    color: $accent-color;
+  }
+  &__link:hover .btn-mail,
+  &__link:focus .btn-mail,
+  &__link:hover .btn-phone,
+  &__link:focus .btn-phone {
+    fill: $accent-color;
+  }
+}
+
+.btn-mail {
+  display: block;
+  fill: $primary-text-color;
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.btn-phone {
+  fill: $primary-text-color;
+  margin-right: 10px;
+  display: block;
+  transition-property: fill;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+  .btn-phone:hover,
+  .btn-phone:focus {
+    fill: $accent-color;
+  }
+}

@@ -1,0 +1,19 @@
+.btn {
+  display: block;
+  background-color: $accent-color;
+  color: $white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
+  margin: 0 auto;
+  border-radius: 4px;
+  transition-property: background-color, color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}

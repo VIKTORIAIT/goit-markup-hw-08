@@ -1,0 +1,35 @@
+/* Work filter */
+.porffolio-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  & &__item:last-child .prt-btn {
+    margin-right: 0;
+  }
+  & .active-filter {
+    background-color: $accent-color;
+    color: $white-color;
+  }
+}
+.prt-btn {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: $primary-text-color;
+  padding: 6px 22px;
+  color: $title-text-color;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-right: 8px;
+  transition-property: background-color, color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+  }
+}
