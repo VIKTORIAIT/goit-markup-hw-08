@@ -3,9 +3,6 @@
   background: rgba(47, 48, 58, 1);
   padding-top: 60px;
   padding-bottom: 60px;
-  & .accent-secondary {
-    color: $white-color;
-  }
 }
 .container-footer {
   display: flex;
@@ -13,13 +10,17 @@
 }
 .footer-card-left {
   min-width: 231px;
-  & .logo {
-    display: block;
-    margin-bottom: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
+}
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  & .nav_color_light {
+    color: $white-color;
   }
 }
+
 .footer-card-center {
   margin-left: 70px;
 }
@@ -61,38 +62,13 @@
   letter-spacing: 0.03em;
   font-weight: 700;
 }
-.footer-social {
+.social-link_background-color_dark {
   background-color: rgba(255, 255, 255, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  text-align: center;
-  padding: 12px;
-  &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 12px;
-    transition-property: background-color;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
-  }
-  &__link:hover,
-  &__link:focus {
-    background-color: $accent-color;
-  }
-  &__logo {
-    fill: $white-color;
-  }
 }
+.footer-social__logo {
+  fill: $white-color;
+}
+
 .footer-card-right {
   display: flex;
   flex-direction: column;

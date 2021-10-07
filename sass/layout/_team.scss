@@ -35,8 +35,15 @@
     margin-bottom: 16px;
   }
 }
+.social-item-team:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link_background-color_light {
+  background-color: $white-color;
+}
 .social-link:hover .social-logo,
-.social-link:focus .social-log {
+.social-link:focus .social-logo {
   fill: $white-color;
 }
 .social-logo {
