@@ -17,9 +17,27 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 *,
@@ -96,15 +114,20 @@ ul {
   color: #212121;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 
 .section {
-  padding-bottom: 95px;
-  padding-top: 95px;
+  padding: 60px auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 95px auto !important;
+  }
 }
 
 .social-list {
