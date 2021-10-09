@@ -8,22 +8,39 @@
     url("../images/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-size: 480px 400px;
+  @media screen and (min-width: $tablet) {
+    background-size: 768px 400px;
+  }
+  @media screen and (min-width: $desktop) {
+    background-size: 1600px 600px;
+  }
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
   &__title {
     color: $white-color;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 30px;
-    max-width: 700px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    max-width: 360px;
+    margin: 0 auto 30px auto;
+    @media screen and (min-width: $desktop) {
+      font-size: 44px;
+      line-height: 1.36;
+      margin: 0 auto 30px auto;
+      max-width: 700px;
+    }
   }
+
   & .btn:hover,
   & .btn:focus {
     background-color: $white-color;
