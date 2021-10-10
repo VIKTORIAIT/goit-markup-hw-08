@@ -3,6 +3,14 @@
 @import "./utils/breakpoints";
 @import "./utils/hidden";
 
+@import "./components/logo";
+@import "./components/backdrop";
+@import "./components/btn";
+@import "./components/modal";
+@import "./components/section_title";
+@import "./components/section";
+@import "./components/social";
+
 @import "./base/common";
 @import "./base/container";
 
@@ -14,11 +22,3 @@
 @import "./layout/team";
 @import "./layout/customers";
 @import "./layout/footer";
-
-@import "./components/logo";
-@import "./components/backdrop";
-@import "./components/btn";
-@import "./components/modal";
-@import "./components/section_title";
-@import "./components/section";
-@import "./components/social";

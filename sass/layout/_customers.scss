@@ -2,15 +2,33 @@
 .client-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -15x;
+  @media screen and (min-width: $desktop) {
+    flex-wrap: unset;
+    margin: unset;
+  }
+}
+.client-item {
+  display: block;
+  margin: 15px;
+  width: calc((100% - 15px * 4) / 2);
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 15px * 6) / 3);
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 15px * 12) / 6);
+    margin: unset;
+  }
 }
 
 .client-link {
-  display: block;
-  width: 170px;
+  display: flex;
   height: 92px;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding: 16px 32px;
   transition-property: border-color;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
@@ -18,8 +36,8 @@
   &:focus {
     border-color: $accent-color;
   }
-  &:hover .client-logo,
-  &:focus .client-logo {
+  &:hover .client-link__logo,
+  &:focus .client-link__logo {
     fill: $accent-color;
   }
   &__logo {

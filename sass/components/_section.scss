@@ -4,3 +4,8 @@
     padding: 95px 0;
   }
 }
+@media screen and (min-width: $desktop) {
+  .feature {
+    padding-bottom: 0px;
+  }
+}

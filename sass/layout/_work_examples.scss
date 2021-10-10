@@ -1,4 +1,10 @@
 /* work examples */
+@media screen and (max-width: $desktop) {
+  .work-examples {
+    display: none;
+  }
+}
+
 .work-fotos {
   display: flex;
   justify-content: space-between;
