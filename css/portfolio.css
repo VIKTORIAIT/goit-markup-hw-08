@@ -344,37 +344,42 @@ ul {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .auth-list:not(:last-child) {
+@media screen and (min-width: 768px) {
+  .nav__auth .auth-list:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 
-.btn-mail {
-  display: block;
-  fill: #757575;
-  margin-right: 10px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .nav__auth .auth-list:not(:last-child) {
+    margin-bottom: unset;
+  }
 }
 
-.btn-mail:hover, .btn-mail:focus {
-  fill: #2196f3;
-}
-
-.btn-phone {
-  fill: #757575;
-  margin-right: 10px;
-  display: block;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-phone .btn-phone:hover,
-.btn-phone .btn-phone:focus {
-  fill: #2196f3;
+@media screen and (min-width: 768px) {
+  .btn-mail {
+    display: block;
+    fill: #757575;
+    margin-right: 10px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn-mail:hover, .btn-mail:focus {
+    fill: #2196f3;
+  }
+  .btn-phone {
+    fill: #757575;
+    margin-right: 10px;
+    display: block;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn-phone .btn-phone:hover,
+  .btn-phone .btn-phone:focus {
+    fill: #2196f3;
+  }
 }
 
 /* Work-cards */

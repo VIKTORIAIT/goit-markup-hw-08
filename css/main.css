@@ -412,37 +412,42 @@ body {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .auth-list:not(:last-child) {
+@media screen and (min-width: 768px) {
+  .nav__auth .auth-list:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 
-.btn-mail {
-  display: block;
-  fill: #757575;
-  margin-right: 10px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .nav__auth .auth-list:not(:last-child) {
+    margin-bottom: unset;
+  }
 }
 
-.btn-mail:hover, .btn-mail:focus {
-  fill: #2196f3;
-}
-
-.btn-phone {
-  fill: #757575;
-  margin-right: 10px;
-  display: block;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-phone .btn-phone:hover,
-.btn-phone .btn-phone:focus {
-  fill: #2196f3;
+@media screen and (min-width: 768px) {
+  .btn-mail {
+    display: block;
+    fill: #757575;
+    margin-right: 10px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn-mail:hover, .btn-mail:focus {
+    fill: #2196f3;
+  }
+  .btn-phone {
+    fill: #757575;
+    margin-right: 10px;
+    display: block;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn-phone .btn-phone:hover,
+  .btn-phone .btn-phone:focus {
+    fill: #2196f3;
+  }
 }
 
 .menu-container {
@@ -573,30 +578,47 @@ body {
 
 /* Hero */
 .hero {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-phone.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 480px 400px;
+  background-size: cover;
+  max-width: 480px;
+  margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-phone@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
-    background-size: 768px 400px;
+    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-tablet@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-size: 1600px 600px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
+    max-width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-desktop.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-desktop@2x.jpg");
   }
 }
 

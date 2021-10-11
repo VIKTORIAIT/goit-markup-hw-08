@@ -136,34 +136,39 @@
     fill: $accent-color;
   }
 }
-@media screen and (min-width: $tablet) and (max-width: $desktop) {
-  .auth-list:not(:last-child) {
+@media screen and (min-width: $tablet) {
+  .nav__auth .auth-list:not(:last-child) {
     margin-bottom: 10px;
   }
-}
-
-.btn-mail {
-  display: block;
-  fill: $primary-text-color;
-  margin-right: 10px;
-  transition-property: fill;
-  transition-duration: $transition-duration;
-  transition-timing-function: $transition-timing-function;
-  &:hover,
-  &:focus {
-    fill: $accent-color;
+  @media screen and (min-width: $desktop) {
+    .nav__auth .auth-list:not(:last-child) {
+      margin-bottom: unset;
+    }
   }
-}
 
-.btn-phone {
-  fill: $primary-text-color;
-  margin-right: 10px;
-  display: block;
-  transition-property: fill;
-  transition-duration: $transition-duration;
-  transition-timing-function: $transition-timing-function;
-  .btn-phone:hover,
-  .btn-phone:focus {
-    fill: $accent-color;
+  .btn-mail {
+    display: block;
+    fill: $primary-text-color;
+    margin-right: 10px;
+    transition-property: fill;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+
+  .btn-phone {
+    fill: $primary-text-color;
+    margin-right: 10px;
+    display: block;
+    transition-property: fill;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+    .btn-phone:hover,
+    .btn-phone:focus {
+      fill: $accent-color;
+    }
   }
 }
