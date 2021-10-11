@@ -206,8 +206,10 @@
                         <use href="./images/icons.svg#icon-check"></use>
                       </svg>
                     </span>
-                    Соглашаюсь с рассылкой и принимаю
-                    <a class="checkbox_link" href=""> Условия договора</a>
+                    <p class="checkbox__text">
+                      Соглашаюсь с рассылкой и принимаю
+                      <a class="checkbox_link" href=""> Условия договора</a>
+                    </p>
                   </label>
                 </div>
                 <button class="form-close" type="submit">Отправить</button>
@@ -284,45 +286,66 @@
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="work-fotos">
-            <li>
+            <li class="work-fotos__item">
               <a href="">
                 <div class="work-img">
-                  <img
-                    class="work-img__photo"
-                    src="./images/box1.jpg"
-                    width="370"
-                    alt="разработка графического шаблона"
-                  />
+                  <picture class="work-img__photo">
+                    <source
+                      srcset="
+                        ./images/work/img1.jpg 1x,
+                        ./images/work/img1@2x  2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/work/img1.jpg"
+                      alt="разработка графического шаблона"
+                    />
+                  </picture>
                   <div class="work-img__cont">
                     <h3 class="work-img__tittle">Десктопные приложения</h3>
                   </div>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="work-fotos__item">
               <a href="">
                 <div class="work-img">
-                  <img
-                    class="work-img__photo"
-                    src="./images/box2.jpg"
-                    width="370"
-                    alt="хорошая комуникация с клиентом"
-                  />
+                  <picture class="work-img__photo">
+                    <source
+                      srcset="
+                        ./images/work/img2.jpg 1x,
+                        ./images/work/img2@2x  2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/work/img2.jpg"
+                      alt="хорошая комуникация с клиентом"
+                    />
+                  </picture>
                   <div class="work-img__cont">
                     <h3 class="work-img__tittle">Мобильные приложения</h3>
                   </div>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="work-fotos__item">
               <a href=""
                 ><div class="work-img">
-                  <img
-                    class="work-img__photo"
-                    src="./images/box3.jpg"
-                    width="370"
-                    alt="подбор стильных цветовых сочетаний"
-                  />
+                  <picture class="work-img__photo">
+                    <source
+                      srcset="
+                        ./images/work/img3.jpg 1x,
+                        ./images/work/img3@2x  2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/work/img3.jpg"
+                      alt="подбор стильных цветовых сочетаний"
+                    />
+                  </picture>
                   <div class="work-img__cont">
                     <h3 class="work-img__tittle">Дизайнерские решения</h3>
                   </div>
@@ -338,12 +361,33 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/photo1.jpg"
-                width="270"
-                alt="мужчина в очках с бородой"
-              />
+              <picture class="work-img__photo">
+                <source
+                  srcset="
+                    ./images/team/img1-desktop.jpg    1x,
+                    ./images/team/img1-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img1-tablet.jpg    1x,
+                    ./images/team/img1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img1-phone.jpg    1x,
+                    ./images/team/img1-phone@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team/img1-phone.jpg"
+                  alt="мужчина в очках с бородой"
+                />
+              </picture class="work-img__photo">
               <div class="team__member">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -392,12 +436,33 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/photo2.jpg"
-                width="270"
-                alt="девушка блондинка в очках"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img2-desktop.jpg    1x,
+                    ./images/team/img2-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img2-tablet.jpg    1x,
+                    ./images/team/img2-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img2-phone.jpg    1x,
+                    ./images/team/img2-phone@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team/img2-phone.jpg"
+                  alt="девушка блондинка в очках"
+                />
+              </picture>
               <div class="team__member">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -446,12 +511,33 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/photo3.jpg"
-                width="270"
-                alt="парень с бородой"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img3-desktop.jpg    1x,
+                    ./images/team/img3-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img3-tablet.jpg    1x,
+                    ./images/team/img3-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img3-phone.jpg    1x,
+                    ./images/team/img3-phone@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team/img3-phone.jpg"
+                  alt="парень с бородой"
+                />
+              </picture>
               <div class="team__member">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -500,12 +586,33 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/photo4.jpg"
-                width="270"
-                alt="парень с бородой и очками"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img4-desktop.jpg    1x,
+                    ./images/team/img4-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img4-tablet.jpg    1x,
+                    ./images/team/img4-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img4-phone.jpg    1x,
+                    ./images/team/img4-phone@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team/img4-phone.jpg"
+                  alt="парень с бородой и очками"
+                />
+              </picture>
               <div class="team__member">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>

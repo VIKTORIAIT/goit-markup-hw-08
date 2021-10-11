@@ -104,3 +104,6 @@
   height: 22px;
   background-color: rgba(33, 33, 33, 0.2);
 }
+.m-social .m-social__item:last-child .m-social__link::after {
+  display: none;
+}

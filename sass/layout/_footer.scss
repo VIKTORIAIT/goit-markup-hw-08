@@ -132,6 +132,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
   max-width: 450px;
   @media screen and (min-width: $tablet) {
     margin-left: auto;
@@ -145,6 +146,7 @@
   &__cont {
     display: flex;
     flex-direction: column;
+    width: 100%;
     @media screen and (min-width: $desktop) {
       flex-direction: row;
     }
@@ -154,9 +156,15 @@
     margin-bottom: 20px;
   }
 }
+.footer-form {
+  width: 100%;
+}
+.submit-label {
+  width: 100%;
+}
 .submit-input {
-  display: flex;
-  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding: 15px 16px;
@@ -165,10 +173,12 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
-  width: 450px;
-  resize: none;
+  width: 100%;
+  // max-width: 450px;
   @media screen and (min-width: $desktop) {
     margin-bottom: unset;
+    margin-right: unset;
+    margin-left: unset;
     width: 358px;
   }
   color: $primary-text-color;
