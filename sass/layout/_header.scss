@@ -4,29 +4,69 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
-
+// Кнопка меню
+.menu-toggle.js-open-menu {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+  & > .menu-btn__icon-m {
+    display: block;
+    fill: $title-text-color;
+  }
+  & > .menu-btn__icon-m:hover {
+    fill: $accent-color;
+  }
+}
 .nav {
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: $tablet) {
+    width: unset;
+  }
   &__site {
-    display: flex;
-    align-items: center;
-    margin-left: 93px;
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      margin-left: 88px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-left: 93px;
+    }
   }
   &__auth {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: auto;
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: auto;
+    }
   }
 }
 .logo-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
   & .nav_color_dark {
-    color: #000 !important;
+    color: #000;
   }
 }
 
@@ -71,11 +111,14 @@
     color: $accent-color;
   }
 }
+
 .auth-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  &:not(:first-child) {
-    margin-left: 50px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &:not(:first-child) {
+      margin-left: 50px;
+    }
   }
   &__link {
     color: $primary-text-color;
@@ -91,6 +134,11 @@
   &__link:hover .btn-phone,
   &__link:focus .btn-phone {
     fill: $accent-color;
+  }
+}
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+  .auth-list:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 

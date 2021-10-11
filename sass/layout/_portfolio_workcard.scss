@@ -1,13 +1,24 @@
 /* Work-cards */
 .work-card {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: -15px;
+  }
 }
 .work-card-item {
   display: block;
-  width: 370px;
-  margin-right: 30px;
   margin-bottom: 30px;
+  @media screen and (min-width: $tablet) {
+    margin: 15px;
+    width: calc((100% - 15px * 4) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 15px * 6) / 3);
+  }
   background: $white-color;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -21,12 +32,7 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0px;
-  }
+
   &:hover .work-card-opacity {
     opacity: 1;
     transform: translateY(0%);

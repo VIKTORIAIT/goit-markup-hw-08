@@ -1,4 +1,14 @@
 /* Modal */
+.modal {
+  width: calc(100vw - 30px);
+  height: auto;
+  @media screen and (min-width: $mobile) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 528px;
+  }
+}
 .person__form,
 .phone__form,
 .mail__form {

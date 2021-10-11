@@ -1,10 +1,29 @@
 /* Work filter */
 .porffolio-filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  & &__item:last-child .prt-btn {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: -7.5px;
+  margin-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    flex-wrap: unset;
+    justify-content: center;
+    margin: -4px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: -4px;
+    margin-bottom: 50px;
+  }
+  &__item {
+    margin: 7.5px;
+    @media screen and (min-width: $tablet) {
+      margin: 4px;
+    }
+  }
+  &__item:last-child .prt-btn {
     margin-right: 0;
+    margin-bottom: 7.5px;
   }
   & .active-filter {
     background-color: $accent-color;
@@ -23,7 +42,6 @@
   color: $title-text-color;
   background-color: #f5f4fa;
   border-radius: 4px;
-  margin-right: 8px;
   transition-property: background-color, color;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
