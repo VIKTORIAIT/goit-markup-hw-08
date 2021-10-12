@@ -437,6 +437,10 @@ ul {
   overflow: hidden;
 }
 
+.work-card-cont__photo {
+  width: 100%;
+}
+
 .work-card-opacity {
   display: block;
   position: absolute;
